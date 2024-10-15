@@ -74,7 +74,7 @@ nav {
   top: 13px;
   height: 35px;
   width: 35px;
-  border: 2px solid #8c52ff;
+  border: 1px solid #8c52ff;
   border-radius: 17%;
   background: transparent url("./Resources/menu.svg") no-repeat center;
   background-size: 22px;
@@ -273,7 +273,7 @@ body.light-mode nav {
   );
 }
 body.light-mode .side-bar {
-background-color: #4a4a4a;
+background-color: #545454;
 }
 body.light-mode .side-bar li {
   color: black;
