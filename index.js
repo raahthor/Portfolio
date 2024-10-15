@@ -8,3 +8,8 @@ function toggleMenu() {
     overlay.classList.remove("show");
   });
 }
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.querySelector("body");
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("light-mode");
+});

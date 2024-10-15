@@ -3,10 +3,7 @@ body {
   font-size: 62.5%; /* 62.5% of 16px is 10px */
   height: 100%;
   margin: 0;
-  background-color: #121212;
-  color: #b0bec5;
 }
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -16,6 +13,8 @@ body {
   border: 2px solid white;
 }
 body {
+  background-color: #121212;
+  color: #696969;
   display: grid;
   grid-template: 100vh / 220px 1fr;
   overflow-y: hidden;
@@ -54,10 +53,11 @@ nav {
   background-image: url("./Resources/simon.jpg");
   background-size: cover;
 }
-.dark-mode {
+.theme-toggle {
   height: 32.5px;
   width: 32.5px;
   margin-right: 40px;
+  cursor: pointer;
   background-image: url("./Resources/sun.svg");
   background-size: cover;
 }
@@ -68,12 +68,9 @@ nav {
   top: 13px;
   height: 35px;
   width: 35px;
-  border: 0.1px solid #8c52ff;
+  border: 2px solid #8c52ff;
   border-radius: 17%;
-  background-color: transparent;
-  background-image: url("./Resources/menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: transparent url("./Resources/menu.svg") no-repeat center;
   background-size: 22px;
   cursor: pointer;
   display: none;
@@ -86,6 +83,7 @@ nav {
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  color: #b0b0b0;
   background-color: #0d0d0d;
   border-right: 1px solid #333333;
   display: flex;
@@ -129,12 +127,13 @@ nav {
 .side-bar ul {
   padding: 0;
   list-style-type: none;
-  color: white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 .side-bar li {
   padding: 1.75rem 2.2rem;
+  color: white;
   border-top: 0.3px solid #333333;
   border-bottom: 0.3px solid #333333;
 }
@@ -152,7 +151,7 @@ nav {
   left: 220px;
   right: 16px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   z-index: 5;
   display: none;
@@ -197,7 +196,7 @@ main section {
   padding: 10px 0 0 10px;
   font-size: 20px;
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .main-text {
@@ -216,6 +215,7 @@ main section {
 #paragraph {
   grid-column: 1 / 4;
   font-size: 1.75rem;
+  font-weight: 500;
   padding: 2% 38.5% 0 3.5%;
 }
 
@@ -249,6 +249,29 @@ main section {
 .main-resume {
 }
 .main-projects {
+}
+
+/* dark mode */
+
+body.light-mode {
+  background-color: #f0f0f0;
+}
+body.light-mode nav {
+  background: linear-gradient(
+    to bottom,
+    #b0b0b0 20%,
+    #f5f5f5eb 85%,
+    #f5f5f500 99%
+  );
+}
+body.light-mode .side-bar {
+background-color: #4a4a4a;
+}
+body.light-mode .side-bar li {
+  color: black;
+}
+body.light-mode .main-text {
+  color: black;
 }
 
 /* media queries */
