@@ -59,7 +59,13 @@ nav {
   margin-right: 40px;
   cursor: pointer;
   background-image: url("./Resources/sun.svg");
-  background-size: cover;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+.moon-toggle{
+  height: 29px;
+  width: 29px;
+  background-image: url("./Resources/moon.svg");
 }
 
 #menu-icon {
@@ -72,6 +78,7 @@ nav {
   border-radius: 17%;
   background: transparent url("./Resources/menu.svg") no-repeat center;
   background-size: 22px;
+  box-shadow: 0 3px 6px 0.5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: none;
   z-index: 7;
@@ -89,7 +96,7 @@ nav {
   display: flex;
   flex-direction: column;
   z-index: 6;
-  transition: width 0.3s ease;
+  transition: width 0.2s ease;
 }
 .side-bar::-webkit-scrollbar {
   display: none;
@@ -155,7 +162,7 @@ nav {
   backdrop-filter: blur(4px);
   z-index: 5;
   display: none;
-  transition: opacity 0.3 ease;
+  transition: opacity 0.2 ease;
 }
 
 /* main */
@@ -207,6 +214,7 @@ main section {
   align-items: center;
   color: white;
   font-size: clamp(4.5rem, 5vw, 6.5rem);
+  z-index: 1;
 }
 #web {
   margin-left: 5vw;
