@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant Rathore</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./Resources/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./Resources/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <button class="profile-icon hover-effect"></button>
+      <div class="theme-toggle hover-effect" type="button"></div>
+    </nav>
+    <!-- <div class="pfp">
+      <img src="./Resources/profileicon.jpg" alt="profile opened" />
+    </div> -->
+    <button id="menu-icon" class="hover-effect" onclick="toggleMenu()"></button>
+    <aside class="side-bar">
+      <div class="profile">
+        <div class="code-snippet1">&lt;div&gt;</div>
+        <div id="profile-text">
+          <p id="name">Prashant</p>
+          <p id="WebD">Web Developer</p>
+        </div>
+        <div class="code-snippet1">&lt;/div&gt;</div>
+      </div>
+      <ul>
+        <li><a href="#home-sec" class="clicked hover-effect">.home()</a></li>
+        <li><a href="#about-sec" class="hover-effect">.about()</a></li>
+        <li><a href="#skills-sec" class="hover-effect">.skills()</a></li>
+        <li><a href="#projects-sec" class="hover-effect">.projects()</a></li>
+        <li><a href="#contact-sec" class="hover-effect">.contact()</a></li>
+      </ul>
+      <div class="overlay"></div>
+    </aside>
+    <main>
+      <section id="home-sec" class="main-home">
+        <div class="code-snippet2">&lt;main&gt;</div>
+        <div class="main-text">
+          <h2 id="web">Front-End</h2>
+          <h2 id="dev">Developer</h2>
+        </div>
+        <p id="paragraph">
+          👋 Hi, I'm Prashant Rathore – a Frontend web developer with a knack
+          for creating seamless, responsive, and engaging digital experiences.
+          Explore my work, skills, and projects below!
+        </p>
+
+        <div class="code-snippet2">&lt;/main&gt;</div>
+        <div class="handles">
+          <a
+            href="https://github.com/raahthor"
+            target="_blank"
+            class="svg-link hover-effect"
+          >
+            <img src="./Resources/github-142-svgrepo-com.png" alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prashant-rathore-401590296"
+            target="_blank"
+            class="svg-link hover-effect"
+          >
+            <img src="./Resources/linkedin-1.png" alt="linkedin" />
+          </a>
+          <a
+            href="mailto:prashantrathore1435@gmail.com?subject=Hello!&body=I%20would%20like%20to%20discuss..."
+            target="_blank"
+            class="svg-link hover-effect"
+          >
+            <img src="./Resources/mailme.png" alt="gmail" />
+          </a>
+          <div class="vertical-line"></div>
+        </div>
+      </section>
+      <section id="about-sec" class="main-about">
+        <div class="aboutMe">About Me</div>
+        <div class="myPicture">
+          <img src="./Resources/download.jpg" />
+        </div>
+        <div class="aboutMeContent">
+          Hey there! I'm Prashant Rathore, a passionate frontend developer with
+          a knack for problem-solving and an appreciation for good design. While
+          I'm still in the early stages of my journey, I'm actively building my
+          skills and working toward becoming a full stack developer. When I'm
+          not coding, you'll likely find me listening to music, gaming, or at
+          the gym. I'm excited to connect with other tech enthusiasts - let's
+          grow together!
+        </div>
+      </section>
+      <section id="skills-sec" class="main-skills">
+        <div class="skills-title">Skills</div>
+        <div class="languages skills-container">
+          <h3 class="skill-con-title">Languages</h3>
+          <div class="skill-content">
+            <div class="skill-logos">
+              <img src="./Resources/cpplogo.png" alt="cpp logo" />
+              <h4>C++</h4>
+              <p>(Beginner)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/jslogo.png" alt=" js logo" />
+              <h4>JavaScript</h4>
+              <p>(Beginner)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/htmllogo.png" alt="html logo" />
+              <h4>HTML</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/csslogo.png" alt="css logo" />
+              <h4>CSS</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos"></div>
+          </div>
+        </div>
+        <div class="frameworks skills-container">
+          <h3 class="skill-con-title">Frameworks & Libraries</h3>
+          <div class="skill-content">
+            <div class="skill-logos">
+              <img src="./Resources/jqrylogo.png" alt="jQuery logo" />
+              <h4>jQuery</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/bootstrap-logo.svg" alt="bootstrap logo" />
+              <h4>Bootstrap</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos"></div>
+            <div class="skill-logos"></div>
+            <div class="skill-logos"></div>
+          </div>
+        </div>
+        <div class="others skills-container">
+          <h3 class="skill-con-title">Others</h3>
+          <div class="skill-content">
+            <div class="skill-logos">
+              <img src="./Resources/gitlogo.png" alt="git logo" />
+              <h4>Git</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/figmalogo.png" alt="figma logo" />
+              <h4>Figma</h4>
+              <p>(Beginner)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/canvalogo.png" alt="canva logo" />
+              <h4>Canva</h4>
+              <p>(Intermediate)</p>
+            </div>
+            <div class="skill-logos"></div>
+            <div class="skill-logos"></div>
+          </div>
+        </div>
+      </section>
+      <section id="projects-sec" class="main-projects">
+        <div class="projects-title">Projects</div>
+        <div class="projects-container">
+          <div class="project-content"><p>To be added</p></div>
+          <div class="project-content"><p>To be added</p></div>
+          <div class="project-content"><p>To be added</p></div>
+          <div class="project-content"><p>To be added</p></div>
+        </div>
+      </section>
+      <section id="contact-sec" class="main-contact">
+        <div class="contact-title">Get in Touch</div>
+        <p>Have a question or want to work together? I'd love to connect!</p>
+        <form
+          id="contactform"
+          action="https://formspree.io/f/xeoqobjy"
+          method="post"
+          target="_blank"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message..."
+            required
+          ></textarea>
+          <button type="submit" class="hover-effect">Send</button>
+        </form>
+        <div class="mycontactinfo">
+          <div class="contact-border"></div>
+          <a
+            class="hover-effect"
+            href="mailto:prashantrathore1435@gmail.com?subject=Hello!&body=I%20would%20like%20to%20discuss..."
+            ><img src="./Resources/mailme.png" alt="" />Email Me</a
+          >
+          <a
+            class="hover-effect"
+            href="https:/www.linkedin.com/in/prashant-rathore-401590296"
+            target="_blank"
+            ><img src="./Resources/linkedin-1.png" alt="" />My LinkedIn</a
+          >
+          <!-- <a  href="#" target="_blank"
+            ><img src="./Resources/x.png" alt="" />My X(Twitter)</a
+          > -->
+          <a
+            class="hover-effect"
+            href="https://github.com/raahthor"
+            target="_blank"
+            ><img src="./Resources/github-142-svgrepo-com.png" alt="" />My
+            GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+    <script src="./index.js" charset="UTF-8"></script>
+  </body>
+</html>
