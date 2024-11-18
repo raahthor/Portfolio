@@ -29,11 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     clickedItems.forEach((el) => el.classList.remove("clicked"));
     this.classList.add("clicked");
 
-    // Close sidebar and overlay
     sidebar.classList.remove("open");
     overlay.classList.remove("show");
 
-    // Navigate by changing hash (without preventDefault)
     const targetSection = this.getAttribute("href");
     window.location.hash = targetSection;
   }
@@ -59,13 +57,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // for profile icon
 
-// const pfpopen = document.querySelector("body .pfp");
-// function pfp_open() {
-//   pfpopen.classList.toggle("pfp-opened");
-//   const pfpopened = document.querySelector("body .pfp-opened");
-//   pfpopened.addEventListener("click", () => {
-//     pfpopen.classList.remove("pfp-opened");
-//   });
-// }
+const pfpopen = document.querySelector("body .pfp");
+function pfp_open() {
+  pfpopen.classList.toggle("pfp-opened");
+  const pfpopened = document.querySelector("body .pfp-opened");
+  pfpopened.addEventListener("click", () => {
+    pfpopen.classList.remove("pfp-opened");
+  });
+}
 
-// for menu options changing class dynamically
+// for menu options changing class dynamically 
+     //... to be added

@@ -62,7 +62,7 @@ nav {
 
 /* to display profile pic */
 
-/* .pfp {
+.pfp {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -81,7 +81,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 /* theme toggle */
 
@@ -417,13 +417,27 @@ main section {
   flex-direction: column;
 }
 .project-content {
-  border: 1px solid #333333;
+  border-top: 1px solid #333333;
+  border-bottom: 0.5px solid #333333;
   height: 25%;
+  padding: 0 5rem 0 5rem;
+  display: flex;
+  align-items: center;
+}
+.project-content img{
+  height: 9rem;
+  margin-right: 2.5rem;
+}
+.project-content a{
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #dfdfdf;
+}
+.project-content a:hover{
+  text-decoration: underline;
 }
 .project-content p {
   font-size: 3rem;
-  text-align: center;
-  margin-top: 40px;
 }
 
 /* contact section */
@@ -560,7 +574,8 @@ body.light-mode .contact-title {
 }
 body.light-mode .skill-con-title,
 body.light-mode .skill-logos h4,
-body.light-mode .mycontactinfo a {
+body.light-mode .mycontactinfo a,
+body.light-mode .project-content a {
   color: #202020;
 }
 
@@ -568,10 +583,13 @@ body.light-mode .mycontactinfo a {
 
 @media (max-width: 750px) {
   html {
-    font-size: 50%;
+    font-size: 47.5%;
   }
   body {
     grid-template: 100vh / 0 1fr;
+  }
+  main{
+    scroll-snap-type: none;
   }
   nav {
     left: 0;
@@ -608,6 +626,9 @@ body.light-mode .mycontactinfo a {
   .skill-content img {
     margin-top: 15px;
     height: 52.5%;
+  }
+  .project-content {
+    padding: 0 2rem 0 2rem;
   }
 }
 
