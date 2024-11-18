@@ -583,7 +583,7 @@ body.light-mode .project-content a {
 
 @media (max-width: 750px) {
   html {
-    font-size: 47.5%;
+    font-size: 50%;
   }
   body {
     grid-template: 100vh / 0 1fr;
