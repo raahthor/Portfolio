@@ -66,5 +66,5 @@ function pfp_open() {
   });
 }
 
-// for menu options changing class dynamically 
-     //... to be added
+// for menu options changing class dynamically
+//... to be added
