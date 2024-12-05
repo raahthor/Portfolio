@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav-bar">
@@ -35,10 +39,7 @@
     <aside class="side-bar">
       <div class="profile">
         <div class="code-snippet1">&lt;div&gt;</div>
-        <div id="profile-text">
-          <p id="name">Prashant</p>
-          <p id="WebD">Web Developer</p>
-        </div>
+        <div id="profile-text">Driven by Logic, Powered by Creativity.</div>
         <div class="code-snippet1">&lt;/div&gt;</div>
       </div>
       <ul>
@@ -54,8 +55,8 @@
       <section id="home-sec" class="main-home">
         <div class="code-snippet2">&lt;main&gt;</div>
         <div class="main-text">
-          <h2 id="web">Full-Stack</h2>
-          <h2 id="dev">Developer</h2>
+          <h2 id="web" class="headings">Full-Stack</h2>
+          <h2 id="dev" class="headings">Developer</h2>
         </div>
         <p id="paragraph">
           👋 Hi, I'm Prashant Rathore – a full-stack web developer with a knack
@@ -90,7 +91,7 @@
         </div>
       </section>
       <section id="about-sec" class="main-about">
-        <div class="aboutMe">About Me</div>
+        <div class="aboutMe headings">About Me</div>
         <div class="myPicture">
           <img src="./Resources/download.jpg" />
         </div>
@@ -106,45 +107,42 @@
         </div>
       </section>
       <section id="skills-sec" class="main-skills">
-        <div class="skills-title">Skills</div>
+        <div class="skills-title headings">Skills</div>
         <div class="languages skills-container">
-          <h3 class="skill-con-title">Languages</h3>
+          <h3 class="skill-con-title headings">Languages</h3>
           <div class="skill-content">
             <div class="skill-logos">
               <img src="./Resources/cpplogo.png" alt="cpp logo" />
               <h4>C++</h4>
-              <p>(Beginner)</p>
             </div>
             <div class="skill-logos">
               <img src="./Resources/jslogo.png" alt=" js logo" />
               <h4>JavaScript</h4>
-              <p>(Beginner)</p>
+            </div>
+            <div class="skill-logos">
+              <img src="./Resources/python.png" alt="python logo" />
+              <h4>Python</h4>
             </div>
             <div class="skill-logos">
               <img src="./Resources/htmllogo.png" alt="html logo" />
               <h4>HTML</h4>
-              <p>(Intermediate)</p>
             </div>
             <div class="skill-logos">
               <img src="./Resources/csslogo.png" alt="css logo" />
               <h4>CSS</h4>
-              <p>(Intermediate)</p>
             </div>
-            <div class="skill-logos"></div>
           </div>
         </div>
         <div class="frameworks skills-container">
-          <h3 class="skill-con-title">Frameworks & Libraries</h3>
+          <h3 class="skill-con-title headings">Frameworks & Libraries</h3>
           <div class="skill-content">
             <div class="skill-logos">
               <img src="./Resources/jqrylogo.png" alt="jQuery logo" />
               <h4>jQuery</h4>
-              <p>(Intermediate)</p>
             </div>
             <div class="skill-logos">
               <img src="./Resources/bootstrap-logo.svg" alt="bootstrap logo" />
               <h4>Bootstrap</h4>
-              <p>(Intermediate)</p>
             </div>
             <div class="skill-logos"></div>
             <div class="skill-logos"></div>
@@ -152,22 +150,19 @@
           </div>
         </div>
         <div class="others skills-container">
-          <h3 class="skill-con-title">Others</h3>
+          <h3 class="skill-con-title headings">Others</h3>
           <div class="skill-content">
             <div class="skill-logos">
               <img src="./Resources/gitlogo.png" alt="git logo" />
               <h4>Git</h4>
-              <p>(Intermediate)</p>
             </div>
             <div class="skill-logos">
               <img src="./Resources/figmalogo.png" alt="figma logo" />
               <h4>Figma</h4>
-              <p>(Beginner)</p>
             </div>
             <div class="skill-logos">
               <img src="./Resources/canvalogo.png" alt="canva logo" />
               <h4>Canva</h4>
-              <p>(Intermediate)</p>
             </div>
             <div class="skill-logos"></div>
             <div class="skill-logos"></div>
@@ -175,7 +170,7 @@
         </div>
       </section>
       <section id="projects-sec" class="main-projects">
-        <div class="projects-title">Projects</div>
+        <div class="projects-title headings">Projects</div>
         <div class="projects-container">
           <div class="project-content">
             <img src="./Resources/tictactoe.png" alt="tic tac toe logo" /><a
@@ -191,7 +186,7 @@
         </div>
       </section>
       <section id="contact-sec" class="main-contact">
-        <div class="contact-title">Get in Touch</div>
+        <div class="contact-title headings">Get in Touch</div>
         <p>Have a question or want to work together? I'd love to connect!</p>
         <form
           id="contactform"
