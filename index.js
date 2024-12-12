@@ -54,5 +54,30 @@ function pfp_open() {
   });
 }
 
+// to reset form after submission
+
+const form = document.getElementById("contactform");
+form.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset(); 
+    } else {
+      alert("Failed to message, Please try again.");
+    }
+  } catch (error) {
+    alert("Error occured : " + error.message);
+  }
+});
+
 // for menu options changing class dynamically
 //... to be added
